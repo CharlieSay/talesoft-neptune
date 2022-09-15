@@ -12,10 +12,19 @@ const Home: NextPage = () => {
       </Head>
 
       <h1 className={styles.title}>
-        <span className={styles.linearWipe}>Creativity.</span>{' '}
+        <span className={styles.linearWipe}>Creativity</span>{' '}
       </h1>
 
-      <p style={{ color: '#fff', fontSize: '1.5rem' }}>We are here for it</p>
+      <p className={styles.times}>
+        <span
+          style={{
+            fontStyle: 'italic',
+          }}
+        >
+          We
+        </span>{' '}
+        are <span style={{ fontWeight: '900' }}>here</span> for it.
+      </p>
 
       <ul style={{ listStyle: 'none', padding: '0' }}>
         <li>Website Design & Creation</li>

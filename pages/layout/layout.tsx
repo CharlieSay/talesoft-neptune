@@ -1,16 +1,19 @@
 import styles from '../../styles/Home.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Layout = (props: { children: React.ReactNode }) => {
   return (
-    <div style={{ minHeight: '100vh' }}>
+    <div>
       <header className={styles.header}>
-        <Image
-          src="/talesoft.svg"
-          alt="Talesoft Logo"
-          width={144}
-          height={32}
-        />
+        <Link passHref href="/" style={{ cursor: 'pointer' }}>
+          <Image
+            src="/talesoft.svg"
+            alt="Talesoft Logo"
+            width={144}
+            height={32}
+          />
+        </Link>
       </header>
       <main className={styles.main}>{props.children}</main>
       <footer className={styles.footer}>

@@ -7,6 +7,7 @@ export const Container = styled.main`
     100% - 1rem
   ); // Override the width for  browsers that support calc function
   margin: 50px auto;
+  background-color: var(--black);
   padding: 50px;
 `
 

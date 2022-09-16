@@ -4,6 +4,9 @@ export const TitleH1 = styled.h1`
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  @media (max-width: 757px) {
+    font-size: 2.5rem;
+  }
 `
 export const TitleH2 = styled.h2`
   color: white;
@@ -30,7 +33,7 @@ export const Glow = styled.span`
   color: var(--white);
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

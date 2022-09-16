@@ -1,6 +1,7 @@
 import styles from '../../styles/Home.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Container } from './layout.styles'
 
 const Layout = (props: { children: React.ReactNode }) => {
   return (
@@ -15,7 +16,7 @@ const Layout = (props: { children: React.ReactNode }) => {
           />
         </Link>
       </header>
-      <main className={styles.main}>{props.children}</main>
+      <Container>{props.children}</Container>
       <footer className={styles.footer}>
         <section>
           Powered by{' '}

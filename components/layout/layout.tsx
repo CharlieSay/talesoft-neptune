@@ -1,12 +1,11 @@
-import styles from '../../styles/Home.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Container } from './layout.styles'
+import { Container, Footer, Header } from './layout.styles'
 
 const Layout = (props: { children: React.ReactNode }) => {
   return (
     <div>
-      <header className={styles.header}>
+      <Header>
         <Link passHref href="/" style={{ cursor: 'pointer' }}>
           <Image
             src="/talesoft.svg"
@@ -15,9 +14,9 @@ const Layout = (props: { children: React.ReactNode }) => {
             height={32}
           />
         </Link>
-      </header>
+      </Header>
       <Container>{props.children}</Container>
-      <footer className={styles.footer}>
+      <Footer>
         <section>
           Powered by{' '}
           <a
@@ -25,11 +24,11 @@ const Layout = (props: { children: React.ReactNode }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className={styles.logo}>Vercel</span>
+            <span>Vercel</span>
           </a>
         </section>
         Talesoft Digital Ltd registered in England No. 13443944
-      </footer>
+      </Footer>
     </div>
   )
 }

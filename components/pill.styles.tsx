@@ -46,7 +46,7 @@ export const PillText = styled.p`
   z-index: 1;
   white-space: nowrap;
   position: absolute;
-  left: 50%; /* horizontal alignment */
-  top: 50%; /* vertical alignment */
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
 `

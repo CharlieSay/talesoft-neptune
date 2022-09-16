@@ -18,3 +18,30 @@ export const Center = styled.section`
     text-align: center;
   }
 `
+
+export const Main = styled.main`
+  height: 75vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
+export const Footer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+`
+
+export const Header = styled.header`
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
+`

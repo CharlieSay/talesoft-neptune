@@ -40,13 +40,3 @@ a {
   text-decoration: underline;
   text-decoration-color: var(--primary);
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: var(--white);
-    background: black;
-  }
-}

@@ -1,8 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Center } from '../components/layout/layout.styles'
-import { PillGroup } from '../components/pill-group'
-import styles from '../styles/Home.module.css'
+import { Glow, TimesP, TitleH1, TitleH2 } from '../styles/typography.styles'
 const Home: NextPage = () => {
   return (
     <div>
@@ -12,11 +11,11 @@ const Home: NextPage = () => {
       </Head>
 
       <Center>
-        <h1 className={styles.title}>
-          <span className={styles.linearWipe}>Creativity</span>{' '}
-        </h1>
+        <TitleH1>
+          <Glow>Creativity</Glow>
+        </TitleH1>
 
-        <p className={styles.times}>
+        <TimesP>
           <span
             style={{
               fontStyle: 'italic',
@@ -25,13 +24,13 @@ const Home: NextPage = () => {
             We
           </span>{' '}
           are <span style={{ fontWeight: '900' }}>here</span> for it.
-        </p>
+        </TimesP>
 
-        <h2 style={{ color: 'white', fontWeight: '400' }}>
+        <TitleH2>
           <a href="mailto:charlie@talesoft.digital?subject=Hey, lets work together">
             Get in touch
           </a>
-        </h2>
+        </TitleH2>
       </Center>
 
       {/* <PillGroup

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { PillGroupContainer, Pill, PillImage, PillText } from './pill.styles'
+import { PillGroupContainer, Pill, PillText } from './pill.styles'
 
 export const PillGroup = (props: {
   areas: { text: string; link: string; thumbLoc: string }[]
@@ -9,7 +9,6 @@ export const PillGroup = (props: {
       {props.areas.map((area) => (
         <Link passHref href={area.link} key={area.text}>
           <Pill>
-            <PillImage src={area.thumbLoc}></PillImage>
             <PillText>{area.text}</PillText>
           </Pill>
         </Link>

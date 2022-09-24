@@ -5,6 +5,10 @@
   --white: #ffffff;
 }
 
+.bg {
+  background-color: var(--black);
+}
+
 html,
 body {
   padding: 0;

@@ -4,7 +4,7 @@ import { Container, Footer, Header } from './layout.styles'
 
 const Layout = (props: { children: React.ReactNode }) => {
   return (
-    <div>
+    <div className="bg">
       <Header>
         <Link passHref href="/" style={{ cursor: 'pointer' }}>
           <Image

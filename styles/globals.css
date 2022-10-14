@@ -9,6 +9,10 @@
   background-color: var(--black);
 }
 
+* {
+  background-color: var(--black);
+}
+
 html,
 body {
   padding: 0;

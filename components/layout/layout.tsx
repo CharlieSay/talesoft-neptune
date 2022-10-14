@@ -17,7 +17,7 @@ const Layout = (props: { children: React.ReactNode }) => {
       </Header>
       <Container>{props.children}</Container>
       <Footer>
-        <Container>
+        <Container style={{ padding: 0 }}>
           Powered by{' '}
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

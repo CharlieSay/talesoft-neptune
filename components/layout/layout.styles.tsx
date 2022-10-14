@@ -21,7 +21,6 @@ export const Center = styled.section`
 `
 
 export const Main = styled.main`
-  height: 75vh;
   flex: 1;
   display: flex;
   flex-direction: column;

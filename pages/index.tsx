@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import ContactUs from '../components/contact-me'
 import { Center } from '../components/layout/layout.styles'
 import { PillGroup } from '../components/pill-group'
 import { Glow, TimesP, TitleH1, TitleH2 } from '../styles/typography.styles'
@@ -10,12 +11,10 @@ const Home: NextPage = () => {
       <Head>
         <title>Talesoft Digital</title>
       </Head>
-
       <Center>
         <TitleH1>
           <Glow>Creativity</Glow>
         </TitleH1>
-
         <TimesP>
           <span
             style={{
@@ -56,11 +55,7 @@ const Home: NextPage = () => {
           ]}
         />
 
-        <TitleH2>
-          <a href="mailto:charlie@talesoft.digital?subject=Hey, lets work together">
-            Get in touch
-          </a>
-        </TitleH2>
+        <ContactUs />
       </Center>
     </div>
   )

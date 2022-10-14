@@ -33,7 +33,6 @@ export const Footer = styled.footer`
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 2rem 0;
   justify-content: center;
   align-items: center;
   text-align: center;

@@ -17,7 +17,7 @@ const Layout = (props: { children: React.ReactNode }) => {
       </Header>
       <Container>{props.children}</Container>
       <Footer>
-        <section>
+        <Container>
           Powered by{' '}
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -26,8 +26,9 @@ const Layout = (props: { children: React.ReactNode }) => {
           >
             <span>Vercel</span>
           </a>
-        </section>
-        Talesoft Digital Ltd registered in England No. 13443944
+          <br />
+          Talesoft Digital Ltd registered in England No. 13443944
+        </Container>
       </Footer>
     </div>
   )

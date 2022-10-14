@@ -12,6 +12,7 @@ import {
   TextArea,
 } from '../styles/form.styles'
 import { TailSpin } from 'react-loader-spinner'
+import { TitleH2 } from '../styles/typography.styles'
 
 type FormState = 'UN_SUBMITTED' | 'SUBMITTING' | 'SUBMITTED'
 
@@ -41,6 +42,18 @@ export default function ContactUs() {
       <FormContainer>
         {formState == 'UN_SUBMITTED' && (
           <Form onSubmit={handleSubmit}>
+            <TitleH2 style={{ backgroundColor: '#242429' }}>
+              Lets work{' '}
+              <span
+                style={{
+                  fontStyle: 'italic',
+                  textDecoration: 'underline',
+                  backgroundColor: '#242429',
+                }}
+              >
+                together
+              </span>
+            </TitleH2>
             <LabelSection>
               <Label htmlFor="name">Your Name</Label>
               <SmallTextArea

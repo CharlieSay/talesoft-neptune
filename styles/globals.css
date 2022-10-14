@@ -6,18 +6,22 @@
 }
 
 .bg {
-  background-color: var(--black);
+  background: var(--black);
 }
 
 * {
-  background-color: var(--black);
+  background: var(--black);
+}
+
+#__next {
+  isolation: isolate;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  background-color: var(--black);
+  background: var(--black);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;

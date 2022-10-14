@@ -13,6 +13,10 @@ export const TitleH2 = styled.h2`
   font-weight: 400;
 `
 
+export const SmallSpan = styled.p`
+  background-color: var(--black);
+`
+
 export const TimesP = styled.p`
   font-family: 'Times New Roman', Times, serif;
   color: 'white';

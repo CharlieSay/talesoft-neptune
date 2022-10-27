@@ -9,10 +9,6 @@
   background: var(--black);
 }
 
-* {
-  background: var(--black);
-}
-
 #__next {
   isolation: isolate;
 }

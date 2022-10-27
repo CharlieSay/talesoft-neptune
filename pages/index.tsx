@@ -1,22 +1,11 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import ContactUs from '../components/contact-me'
 import { Center } from '../components/layout/layout.styles'
-import { PillGroup } from '../components/pill-group'
-import {
-  Glow,
-  SmallSpan,
-  TimesP,
-  TitleH1,
-  TitleH2,
-} from '../styles/typography.styles'
+import { Glow, SmallSpan, TimesP, TitleH1 } from '../styles/typography.styles'
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Head>
-        <title>Talesoft Digital</title>
-      </Head>
       <Center>
         <TitleH1>
           <Glow>Creativity</Glow>

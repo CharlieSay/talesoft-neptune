@@ -23,6 +23,7 @@ export const ContactButton = styled.button`
   background-color: transparent;
   padding: 8px 20px;
   border-radius: 16px;
+  border-width: 0.075rem;
   margin: auto;
   &:hover {
     cursor: pointer;

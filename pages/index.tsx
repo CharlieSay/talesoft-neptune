@@ -1,7 +1,14 @@
 import type { NextPage } from 'next'
 import ContactUs from '../components/contact-me'
 import { Center } from '../components/layout/layout.styles'
-import { Glow, SmallSpan, TimesP, TitleH1 } from '../styles/typography.styles'
+import {
+  CtaA,
+  Glow,
+  SmallSpan,
+  TimesP,
+  TitleH1,
+  TitleH2,
+} from '../styles/typography.styles'
 
 const Home: NextPage = () => {
   return (

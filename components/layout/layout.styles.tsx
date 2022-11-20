@@ -39,6 +39,7 @@ export const Footer = styled.footer`
 
 export const Header = styled.header`
   display: flex;
+  flex-direction: column;
   flex: 1;
   padding: 2rem 0;
   justify-content: center;

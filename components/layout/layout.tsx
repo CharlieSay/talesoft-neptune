@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { CtaP } from '../../styles/typography.styles'
 import { Container, Footer, Header } from './layout.styles'
 
 const Layout = (props: { children: React.ReactNode }) => {
@@ -14,6 +15,11 @@ const Layout = (props: { children: React.ReactNode }) => {
             height={32}
           />
         </Link>
+        <section>
+          <Link href="/rates">
+            <CtaP>Rates</CtaP>
+          </Link>
+        </section>
       </Header>
       <Container>{props.children}</Container>
       <Footer>

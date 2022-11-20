@@ -16,6 +16,12 @@ export const TitleH2 = styled.h2<{ alternative?: boolean }>`
   color: ${(props) => (props.alternative ? 'white' : 'default')};
 `
 
+export const CtaP = styled.p<{ alternative?: boolean }>`
+  color: white;
+  font-weight: 400;
+  color: ${(props) => (props.alternative ? 'white' : 'default')};
+`
+
 export const RatesSectionFooterText = styled.p`
   text-align: center;
   font-size: 75%;

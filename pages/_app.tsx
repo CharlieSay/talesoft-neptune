@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Layout>
       <Head>
+        <title>Talesoft Digital | Digital Agency based in Manchester</title>
         <meta
           name="title"
           content="Talesoft Digital | Digital Agency based in Manchester"

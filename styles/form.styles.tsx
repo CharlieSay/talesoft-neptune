@@ -49,6 +49,26 @@ export const FormContainer = styled.section`
   max-width: 500px;
 `
 
+export const TableContainer = styled.table`
+  padding: 16px;
+  flex: 1;
+  background-color: #242429;
+  border-radius: 8px;
+  max-width: 500px;
+`
+
+export const THead = styled.thead`
+  tr {
+    th {
+      width: 50%;
+    }
+  }
+`
+
+export const SubTextTable = styled.p`
+  width: 100%;
+`
+
 export const SmallTextArea = styled.input`
   display: block;
   padding: 10px;

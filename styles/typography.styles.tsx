@@ -1,16 +1,25 @@
 import styled from 'styled-components'
 
-export const TitleH1 = styled.h1`
+export const TitleH1 = styled.h1<{ alternative?: boolean }>`
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  color: ${(props) => (props.alternative ? 'white' : 'default')};
   @media (max-width: 757px) {
     font-size: 2.5rem;
   }
 `
-export const TitleH2 = styled.h2`
+
+export const TitleH2 = styled.h2<{ alternative?: boolean }>`
   color: white;
   font-weight: 400;
+  color: ${(props) => (props.alternative ? 'white' : 'default')};
+`
+
+export const RatesSectionFooterText = styled.p`
+  text-align: center;
+  font-size: 75%;
+  opacity: 70%;
 `
 
 export const SmallSpan = styled.p`

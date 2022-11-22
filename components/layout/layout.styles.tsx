@@ -6,9 +6,9 @@ export const Container = styled.main`
   width: calc(
     100% - 1rem
   ); // Override the width for  browsers that support calc function
-  margin: 50px auto;
+  margin: 0 auto;
   background-color: var(--black);
-  padding: 50px;
+  padding: 24px;
 `
 
 export const Center = styled.section`

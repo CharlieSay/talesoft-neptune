@@ -1,12 +1,14 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import Layout from '../components/layout/layout'
+import { Wrapper } from '../components/wrapper'
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
+    <section className={'w-full h-screen'}>
       <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <title>Talesoft Digital | Digital Agency based in Manchester</title>
         <meta
           name="title"
@@ -46,9 +48,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#18181b" />
       </Head>
-      <Component {...pageProps} />
-    </Layout>
+      <Wrapper>
+        <Component {...pageProps} />
+      </Wrapper>
+    </section>
   )
 }
-
-export default MyApp

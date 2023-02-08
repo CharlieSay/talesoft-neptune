@@ -58,7 +58,7 @@ const ratesData = [
 
 const Rates: NextPage = () => {
   return (
-    <div className="my-auto grid grid-cols-1 gap-4 w-1/2">
+    <div className="my-auto grid grid-cols-1 gap-4 w-full sm:w-1/2">
       {ratesData.map((rateData) => (
         <section
           className="flex flex-col justify-center bg-zinc-800 rounded-md p-4"

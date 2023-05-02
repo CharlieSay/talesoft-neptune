@@ -23,7 +23,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           content="software, web design, websites, technology"
         />
         <meta name="robots" content="index, follow" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta name="author" content="charlie@talesoft.digital" />
         <link
@@ -45,7 +45,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00774f" />
-        <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#18181b" />
       </Head>
       <Wrapper>

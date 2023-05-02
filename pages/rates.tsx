@@ -6,54 +6,48 @@ const ratesData = [
     sectionGroup: [
       {
         title: 'Video Switching',
-        rates: [
-          { value: 28, type: 'Hour' },
-          { value: 200, type: 'Day (8 Hours)' },
-        ],
+        rates: [{ value: 28, type: 'Hour' }],
         subText:
           'If out of hours (before 8am, after 10pm) per hour, 1.5x is charged of hourly rate',
       },
       {
         title: 'Production Management',
-        rates: [
-          { value: 30, type: 'Hour' },
-          { value: 220, type: 'Day (8 Hours)' },
-        ],
+        rates: [{ value: 30, type: 'Hour' }],
         subText:
           'If out of hours (before 8am, after 10pm) per hour, 1.5x is charged of hourly rate',
       },
     ],
   },
-  {
-    section: 'Creative / Media',
-    sectionGroup: [
-      {
-        title: 'Adaptation',
-        rates: [{ value: 25, type: 'Hour' }],
-      },
-      {
-        title: 'Creation',
-        rates: [{ value: 39, type: 'Hour' }],
-      },
-      {
-        title: 'Design',
-        rates: [{ value: 'Negotiable', type: 'Hour' }],
-      },
-    ],
-  },
-  {
-    section: 'Software Consulting',
-    sectionGroup: [
-      {
-        title: 'Backend',
-        rates: [{ value: 50, type: 'Hour' }],
-      },
-      {
-        title: 'Web / Full-stack',
-        rates: [{ value: 45, type: 'Hour' }],
-      },
-    ],
-  },
+  // {
+  //   section: 'Creative / Media',
+  //   sectionGroup: [
+  //     {
+  //       title: 'Adaptation',
+  //       rates: [{ value: 25, type: 'Hour' }],
+  //     },
+  //     {
+  //       title: 'Creation',
+  //       rates: [{ value: 39, type: 'Hour' }],
+  //     },
+  //     {
+  //       title: 'Design',
+  //       rates: [{ value: 'Negotiable', type: 'Hour' }],
+  //     },
+  //   ],
+  // },
+  // {
+  //   section: 'Software Consulting',
+  //   sectionGroup: [
+  //     {
+  //       title: 'Backend',
+  //       rates: [{ value: 50, type: 'Hour' }],
+  //     },
+  //     {
+  //       title: 'Web / Full-stack',
+  //       rates: [{ value: 45, type: 'Hour' }],
+  //     },
+  //   ],
+  // },
 ]
 
 const Rates: NextPage = () => {
@@ -103,6 +97,7 @@ const Rates: NextPage = () => {
                   ))}
                 </tbody>
               </table>
+              <p className="pt-4 text-sm text-center w-auto">{group.subText}</p>
             </section>
           ))}
         </section>

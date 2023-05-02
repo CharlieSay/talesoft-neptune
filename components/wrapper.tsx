@@ -15,17 +15,17 @@ export const Wrapper = (props: { children: React.ReactNode }) => {
             />
           </Link>
         </section>
-        <Link href="/rates">
-          <p className="pt-4 underline decoration-emerald-600 text-center">
-            Rates
-          </p>
-        </Link>
       </header>
       <main className="text-center grow flex justify-center align-middle">
         {props.children}
       </main>
       <footer className="section pb-8 text-center">
         Talesoft Digital Ltd registered in England No. 13443944
+        <Link href="/rates">
+          <p className="pt-4 underline decoration-emerald-600 text-center">
+            Live Production Rates
+          </p>
+        </Link>
       </footer>
     </main>
   )

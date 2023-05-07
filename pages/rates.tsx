@@ -52,18 +52,20 @@ const ratesData = [
 
 const Rates: NextPage = () => {
   return (
-    <div className="my-auto grid grid-cols-1 gap-4 w-full sm:w-1/2">
+    <div className="my-auto text-center grid grid-cols-1 gap-4 w-full sm:w-1/2">
       {ratesData.map((rateData) => (
         <section
-          className="flex flex-col justify-center bg-zinc-800 rounded-md p-4"
+          className="flex flex-col justify-center rounded-md p-4"
           key={rateData.section}
         >
           <h1 className="text-2xl font-bold uppercase">{rateData.section}</h1>
           {rateData.sectionGroup.map((group) => (
-            <section key={group.title} className="pb-8 ">
-              <h1 className="text-xl lowercase py-2">{group.title}</h1>
-              <table className="min-w-full pb-4 text-left">
-                <thead className="bg-zinc-700">
+            <section key={group.title} className="pb-8">
+              <h1 className="text-xl font-bold py-2 highlight uppercase">
+                {group.title}
+              </h1>
+              <table className="min-w-full pb-4 shadow-sm">
+                <thead className="">
                   <tr>
                     <th scope="col" className="px-6 py-3 font-bold">
                       Name
@@ -76,7 +78,7 @@ const Rates: NextPage = () => {
                 <tbody>
                   {group.rates.map((rate) => (
                     <tr
-                      className="border-b w-full hover:bg-zinc-900 hover:cursor-pointer"
+                      className="border-b w-full  hover:cursor-pointer"
                       key={group.title}
                     >
                       <th

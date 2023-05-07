@@ -5,7 +5,7 @@ import '../styles/globals.css'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <section className={'w-full h-screen'}>
+    <section classNameName={'w-full h-screen'}>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

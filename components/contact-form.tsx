@@ -25,14 +25,14 @@ export default function ContactUs() {
     setFormState('SUBMITTED')
   }
   return (
-    <section classNameName="drop-shadow-md rounded-md my-4 p-4">
+    <section className="drop-shadow-md rounded-md my-4 p-4">
       {formState == 'UN_SUBMITTED' && (
         <section onSubmit={handleSubmit}>
-          <h1 classNameName="text-xl py-4">Drop us an email</h1>
-          <form onSubmit={handleSubmit} classNameName="w-full px-4">
-            <div classNameName="pb-4">
+          <h1 className="text-xl py-4">Drop us an email</h1>
+          <form onSubmit={handleSubmit} className="w-full px-4">
+            <div className="pb-4">
               <label
-                classNameName="block mb-2 text-sm font-bold text-black dark:text-gray-300"
+                className="block mb-2 text-sm font-bold text-black dark:text-gray-300"
                 htmlFor="name"
               >
                 Name
@@ -43,12 +43,12 @@ export default function ContactUs() {
                 name="name"
                 placeholder="Name"
                 required={true}
-                classNameName="w-full rounded-md placeholder:text-xs p-2 text-black"
+                className="w-full rounded-md placeholder:text-xs p-2 text-black"
               />
             </div>
-            <div classNameName="pb-4">
+            <div className="pb-4">
               <label
-                classNameName="block mb-2 text-sm font-bold text-black dark:text-gray-300"
+                className="block mb-2 text-sm font-bold text-black dark:text-gray-300"
                 htmlFor="email"
               >
                 Email Address
@@ -59,18 +59,18 @@ export default function ContactUs() {
                 name="email"
                 placeholder="Email"
                 required={true}
-                classNameName="w-full rounded-md placeholder:text-xs p-2 text-black"
+                className="w-full rounded-md placeholder:text-xs p-2 text-black"
               />
             </div>
-            <div classNameName="pb-4">
+            <div className="pb-4">
               <label
-                classNameName="block mb-2 text-sm font-bold text-black dark:text-gray-300"
+                className="block mb-2 text-sm font-bold text-black dark:text-gray-300"
                 htmlFor="message"
               >
                 Message
               </label>
               <textarea
-                classNameName="w-full rounded-md p-2 text-black"
+                className="w-full rounded-md p-2 text-black"
                 id="message"
                 name="message"
                 required={true}
@@ -78,9 +78,9 @@ export default function ContactUs() {
             </div>
             <button
               type="submit"
-              classNameName="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-black dark:text-black focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
+              className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-black dark:text-black focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
             >
-              <span classNameName="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                 Submit
               </span>
             </button>
@@ -91,7 +91,7 @@ export default function ContactUs() {
         <div role="status">
           <svg
             aria-hidden="true"
-            classNameName="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+            className="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
             viewBox="0 0 100 101"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ export default function ContactUs() {
               fill="currentFill"
             />
           </svg>
-          <span classNameName="sr-only">Loading...</span>
+          <span className="sr-only">Loading...</span>
         </div>
       )}
       {formState == 'SUBMITTED' && (

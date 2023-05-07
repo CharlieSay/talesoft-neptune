@@ -5,7 +5,7 @@ import '../styles/globals.css'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <section classNameName={'w-full h-screen'}>
+    <section className={'w-full h-screen'}>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -44,7 +44,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00774f" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1D4ED8" />
         <meta name="theme-color" content="#18181b" />
       </Head>
       <Wrapper>

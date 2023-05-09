@@ -46,7 +46,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="d#1D4ED8" />
-        <meta name="theme-color" content="#18181b" />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
       <Layout>
         <Component {...pageProps} />

@@ -4,6 +4,7 @@
 
 html {
     @apply bg-zinc-50;
+    background-color: white;
 }
 
 h1,

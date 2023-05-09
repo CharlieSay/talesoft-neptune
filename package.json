@@ -11,7 +11,9 @@
   "dependencies": {
     "@formspark/use-formspark": "^0.1.39",
     "@next/font": "^13.1.2",
+    "@vercel/analytics": "^1.0.1",
     "autoprefixer": "^10.4.13",
+    "flowbite": "^1.6.5",
     "next": "13.1.0",
     "postcss": "^8.4.21",
     "react": "18.2.0",

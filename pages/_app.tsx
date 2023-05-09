@@ -1,7 +1,8 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { Wrapper } from '../components/wrapper'
+import { Layout } from '../components/layout'
 import '../styles/globals.css'
+import 'flowbite'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -47,9 +48,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="d#1D4ED8" />
         <meta name="theme-color" content="#18181b" />
       </Head>
-      <Wrapper>
+      <Layout>
         <Component {...pageProps} />
-      </Wrapper>
+      </Layout>
     </section>
   )
 }

@@ -61,7 +61,7 @@ const Rates: NextPage = () => {
           <h1 className="text-2xl font-bold uppercase">{rateData.section}</h1>
           {rateData.sectionGroup.map((group) => (
             <section key={group.title} className="pb-8">
-              <h1 className="text-xl font-bold py-2 highlight uppercase">
+              <h1 className="block-highlight text-xl font-bold py-2 highlight uppercase">
                 {group.title}
               </h1>
               <table className="min-w-full pb-4 shadow-sm">

@@ -17,6 +17,10 @@ p {
     color: black;
 }
 
+.invertMe {
+    mix-blend-mode: invert;
+}
+
 .block-highlight {
     background-color: rgb(29 78 216);
     color: white;
@@ -25,27 +29,4 @@ p {
     width: 50%;
     z-index: -100;
     transform: rotate(-1deg);
-}
-
-.highlight-container,
-.highlight {
-    position: relative;
-}
-
-.highlight-container {
-    display: inline-block;
-}
-.highlight-container:before {
-    content: "";
-    display: block;
-    height: 10%;
-    width: 110%;
-    margin-left: -3px;
-    margin-right: -3px;
-    position: absolute;
-    background: rgb(29 78 216);
-    top: 50px;
-    left: -30px;
-    border-radius: 20% 25% 20% 24%;
-    padding: 10px 3px 3px 10px;
 }

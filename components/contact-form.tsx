@@ -1,93 +1,91 @@
-import { useFormspark } from '@formspark/use-formspark'
-import { useState } from 'react'
+import { useFormspark } from "@formspark/use-formspark";
+import { useState } from "react";
 
-type FormState = 'UN_SUBMITTED' | 'SUBMITTING' | 'SUBMITTED'
+type FormState = "UN_SUBMITTED" | "SUBMITTING" | "SUBMITTED";
 
 export default function ContactUs() {
   const [submit] = useFormspark({
-    formId: 'BiS7kq4h',
-  })
-  const [formState, setFormState] = useState<FormState>('UN_SUBMITTED')
+    formId: "BiS7kq4h",
+  });
+  const [formState, setFormState] = useState<FormState>("UN_SUBMITTED");
   const handleSubmit = async (event: any) => {
-    setFormState('SUBMITTING')
-    event.preventDefault()
+    setFormState("SUBMITTING");
+    event.preventDefault();
 
-    const name = event.target.name.value
-    const email = event.target.email.value
-    const message = event.target.message.value
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const message = event.target.message.value;
 
     const submitedContent = {
       name: name,
       email: email,
       message: message,
-    }
-    await submit(submitedContent)
-    setFormState('SUBMITTED')
-  }
+    };
+    await submit(submitedContent);
+    setFormState("SUBMITTED");
+  };
   return (
-    <section className="drop-shadow-md rounded-md my-4 p-4">
-      {formState == 'UN_SUBMITTED' && (
-        <section onSubmit={handleSubmit}>
-          <h1 className="text-xl py-4">Drop us an email</h1>
-          <form onSubmit={handleSubmit} className="w-full px-4">
-            <div className="pb-4">
-              <label
-                className="block mb-2 text-sm font-bold text-black dark:text-gray-300"
-                htmlFor="name"
-              >
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Name"
-                required={true}
-                className="w-full rounded-md placeholder:text-xs p-2 text-black"
-              />
-            </div>
-            <div className="pb-4">
-              <label
-                className="block mb-2 text-sm font-bold text-black dark:text-gray-300"
-                htmlFor="email"
-              >
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-                required={true}
-                className="w-full rounded-md placeholder:text-xs p-2 text-black"
-              />
-            </div>
-            <div className="pb-4">
-              <label
-                className="block mb-2 text-sm font-bold text-black dark:text-gray-300"
-                htmlFor="message"
-              >
-                Message
-              </label>
-              <textarea
-                className="w-full rounded-md p-2 text-black"
-                id="message"
-                name="message"
-                required={true}
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-black dark:text-black focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
+    <section className="grow max-w-lg my-auto">
+      <h1 className="block-highlight text-xl font-bold highlight uppercase p-4">
+        Drop us an email
+      </h1>
+      {formState == "UN_SUBMITTED" && (
+        <form onSubmit={handleSubmit} className="space-y-4 p-4 grow">
+          <div className="pb-4">
+            <label
+              className="block mb-2 text-sm font-bold text-black dark:text-gray-300"
+              htmlFor="name"
             >
-              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                Submit
-              </span>
-            </button>
-          </form>
-        </section>
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required={true}
+              className="w-full rounded-md placeholder:text-xs p-2 text-black"
+            />
+          </div>
+          <div className="pb-4">
+            <label
+              className="block mb-2 text-sm font-bold text-black dark:text-gray-300"
+              htmlFor="email"
+            >
+              Email Address
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required={true}
+              className="w-full rounded-md placeholder:text-xs p-2 text-black"
+            />
+          </div>
+          <div className="pb-4">
+            <label
+              className="block mb-2 text-sm font-bold text-black dark:text-gray-300"
+              htmlFor="message"
+            >
+              Message
+            </label>
+            <textarea
+              className="w-full rounded-md p-2 text-black"
+              id="message"
+              name="message"
+              required={true}
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="whitespace-nowrap text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 ml-4 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+          >
+            Submit
+          </button>
+        </form>
       )}
-      {formState == 'SUBMITTING' && (
+      {formState == "SUBMITTING" && (
         <div role="status">
           <svg
             aria-hidden="true"
@@ -108,7 +106,7 @@ export default function ContactUs() {
           <span className="sr-only">Loading...</span>
         </div>
       )}
-      {formState == 'SUBMITTED' && (
+      {formState == "SUBMITTED" && (
         <>
           <p>Thank you for getting in touch</p>
           <p>We will contact you soon</p>
@@ -116,5 +114,5 @@ export default function ContactUs() {
         </>
       )}
     </section>
-  )
+  );
 }

@@ -1,13 +1,13 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import Talesoft from '../public/talesoft.svg'
+import Image from "next/image";
+import Link from "next/link";
+import Talesoft from "../public/talesoft.svg";
 
 const navigation = [
-  { text: 'About', href: '/about' },
-  { text: 'Services', href: '/services' },
-  { text: 'Portfolio', href: '/portfolio' },
-  { text: 'Testimonials', href: '/testimonials' },
-]
+  ,// { text: 'About', href: '/about' },
+  // { text: 'Services', href: '/services' },
+  // { text: 'Portfolio', href: '/portfolio' },
+  // { text: 'Testimonials', href: '/testimonials' }
+];
 
 export const Layout = (props: { children: React.ReactNode }) => {
   return (
@@ -95,5 +95,5 @@ export const Layout = (props: { children: React.ReactNode }) => {
         </Link>
       </footer>
     </main>
-  )
-}
+  );
+};

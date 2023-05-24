@@ -69,7 +69,7 @@ export const Layout = (props: { children: React.ReactNode }) => {
               id="mobile-menu"
             >
               <ul className="flex flex-col mr-2 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                {navigation.map((navLink) => (
+                {/* {navigation.map((navLink) => (
                   <li key={navLink.text}>
                     <Link
                       href={navLink.href}
@@ -79,7 +79,7 @@ export const Layout = (props: { children: React.ReactNode }) => {
                       {navLink.text}
                     </Link>
                   </li>
-                ))}
+                ))} */}
               </ul>
             </div>
           </div>

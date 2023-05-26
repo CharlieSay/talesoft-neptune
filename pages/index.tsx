@@ -1,27 +1,15 @@
 import type { NextPage } from "next";
-import { RoughNotation } from "react-rough-notation";
 
 const Home: NextPage = () => {
   return (
-    <section className="m-auto p-auto md:mt-64">
-      <h1 className="z-50 mb-7 antialiased text-md md:text-5xl font-semibold">
-        Amplify your message through
+    <section className="mt-16 sm:m-auto ml-8 text-start md:text-center">
+      <h1 className="mb-7 antialiased [word-spacing:150px] sm:[word-spacing:0px] text-7xl">
+        Amplify {"\n"}
+        <span className="font-semibold">Your</span> Message
       </h1>
-      <h1 className="hidden md:block pt-4 text-5xl font-extrabold uppercase">
-        <RoughNotation
-          type="circle"
-          color="#1d4fd8"
-          padding={[20, 100]}
-          show={true}
-        >
-          Digital Transformation
-        </RoughNotation>
-      </h1>
-      <h1 className="block text-white flex-wrap md:hidden pt-4 text-2xl  font-extrabold uppercase">
-        <RoughNotation type="highlight" color="#1d4fd8" show={true}>
-          Digital Transformation
-        </RoughNotation>
-      </h1>
+      <h2 className="text-6xl text-blue-700 [word-spacing:300px] sm:[word-spacing:0px]">
+        with Next-Gen Digital Tools
+      </h2>
     </section>
   );
 };

@@ -88,10 +88,10 @@ export const Layout = (props: { children: React.ReactNode }) => {
       <main className="text-center grow flex justify-center align-middle">
         {props.children}
       </main>
-      <footer className="section pb-8 text-center text-sm">
+      <footer className="ml-8 mt-8 section pb-8 text-start text-xs md:text-center md:text-sm">
         Talesoft Digital Ltd registered in England No. 13443944
         <Link href="/rates">
-          <p className="underline decoration-blue-600 text-center">Rates</p>
+          <p className="underline decoration-blue-600">Rates</p>
         </Link>
       </footer>
     </main>

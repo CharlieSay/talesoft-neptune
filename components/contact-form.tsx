@@ -26,7 +26,7 @@ export default function ContactUs() {
   };
   return (
     <section className="grow max-w-lg my-auto">
-      <h1 className="block-highlight text-xl font-bold highlight uppercase p-4">
+      <h1 className="pt-8 w-50 block-highlight text-xl font-bold highlight uppercase p-4">
         Drop us an email
       </h1>
       {formState == "UN_SUBMITTED" && (
@@ -71,7 +71,7 @@ export default function ContactUs() {
               Message
             </label>
             <textarea
-              className="w-full rounded-md p-2 text-black"
+              className="w-full rounded-xs p-2 text-black"
               id="message"
               name="message"
               required={true}
@@ -79,7 +79,7 @@ export default function ContactUs() {
           </div>
           <button
             type="submit"
-            className="whitespace-nowrap text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 ml-4 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+            className="whitespace-nowrap text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-sm text-sm px-4 lg:px-5 py-2 lg:py-2.5 ml-4 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
           >
             Submit
           </button>

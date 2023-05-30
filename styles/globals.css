@@ -26,7 +26,6 @@ p {
     color: white;
     padding: 4px;
     margin: auto;
-    width: 50%;
     z-index: -100;
     transform: rotate(-1deg);
 }

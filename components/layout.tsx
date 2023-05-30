@@ -2,12 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Talesoft from "../public/talesoft.svg";
 
-const navigation = [
-  ,// { text: 'About', href: '/about' },
-  // { text: 'Services', href: '/services' },
-  // { text: 'Portfolio', href: '/portfolio' },
-  // { text: 'Testimonials', href: '/testimonials' }
-];
+const navigation = [{ text: "Rates", href: "/rates" }];
 
 export const Layout = (props: { children: React.ReactNode }) => {
   return (
@@ -26,14 +21,14 @@ export const Layout = (props: { children: React.ReactNode }) => {
             <div className="flex items-center lg:order-2">
               <Link
                 href="/contact"
-                className="whitespace-nowrap text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 ml-4 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                className="whitespace-nowrap text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-sm text-sm px-4 lg:px-5 py-2 lg:py-2.5 ml-4 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
               >
                 Contact us
               </Link>
               <button
                 data-collapse-toggle="mobile-menu"
                 type="button"
-                className="hidden inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -68,8 +63,8 @@ export const Layout = (props: { children: React.ReactNode }) => {
               className="hidden justify-between lg:grow lg:justify-end items-center w-full lg:flex lg:w-auto lg:order-1"
               id="mobile-menu"
             >
-              <ul className="flex flex-col mr-2 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                {/* {navigation.map((navLink) => (
+              <ul className="flex flex-col mr-2 font-medium  lg:flex-row lg:space-x-8 lg:mt-0">
+                {navigation.map((navLink) => (
                   <li key={navLink.text}>
                     <Link
                       href={navLink.href}
@@ -79,7 +74,7 @@ export const Layout = (props: { children: React.ReactNode }) => {
                       {navLink.text}
                     </Link>
                   </li>
-                ))} */}
+                ))}
               </ul>
             </div>
           </div>
@@ -90,9 +85,6 @@ export const Layout = (props: { children: React.ReactNode }) => {
       </main>
       <footer className="ml-8 mt-8 section pb-8 text-start text-xs md:text-center md:text-sm">
         Talesoft Digital Ltd registered in England No. 13443944
-        <Link href="/rates">
-          <p className="underline decoration-blue-600">Rates</p>
-        </Link>
       </footer>
     </main>
   );

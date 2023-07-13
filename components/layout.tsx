@@ -2,7 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Talesoft from "../public/talesoft.svg";
 
-const navigation = [{ text: "Rates", href: "/rates" }];
+const navigation = [
+  {
+    text: "Visuals Store",
+    passHref: true,
+    href: "https://store.talesoft.digital",
+  },
+  { text: "Rates", passHref: false, href: "/rates" },
+];
 
 export const Layout = (props: { children: React.ReactNode }) => {
   return (
@@ -68,6 +75,7 @@ export const Layout = (props: { children: React.ReactNode }) => {
                   <li key={navLink.text}>
                     <Link
                       href={navLink.href}
+                      passHref={navLink.passHref}
                       className="block hover:bg-slate-50 py-2 px-4 text-black rounded lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-black"
                       aria-label={navLink.text}
                     >

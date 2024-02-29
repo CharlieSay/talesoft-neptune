@@ -8,7 +8,6 @@ const navigation = [
     passHref: true,
     href: "https://store.talesoft.digital",
   },
-  { text: "Rates", passHref: false, href: "/rates" },
 ];
 
 export const Layout = (props: { children: React.ReactNode }) => {
